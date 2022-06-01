@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Lobster&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Josefin+Sans:wght@600&family=Lobster&family=Ubuntu:ital@1&display=swap');
+/*font-family: 'Dongle', sans-serif;
+font-family: 'Lobster', cursive;*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 40px;
+}
+.webpage{
+    background-image: url('BG.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+.topbar{
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0,0,0.8);
+    color: white;
+    display: flex;
+}
+.browse{
+    margin-left: 15vw;
+    margin-top: 3vh;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.search{
+    margin-left: 2vw;
+    margin-top: 1vh;
+    display: block;
+    text-align: center;
+}
+
+.search input[type=text] {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 0.4rem;
+    height: 4vh;
+    width: 40vw;
+}
+.language{
+    font-size: 0.5rem;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+.idholder{
+    display: flex;
+    margin-left: 8vw;
+    font-size: 0.5rem;
+    margin-top: 2vh;
+}
+.idholder img{
+    height: 3vw;
+    width: 3vw;
+    margin-right: 1vw;
+}
+.heading{
+    font-family: 'Lobster', cursive;
+}
+.logout button{
+    cursor: pointer;
+    height: 4vh;
+    width: 6vw;
+    margin-top: 3vh;
+    margin-left: 4vw;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.logout button:hover{
+    height: 5vh;
+    margin-top: 2vh;
+    width: 8vw;
+    color: black;
+    background-color: red;
+}
+.logo{
+    position: absolute;
+    top:1vh;
+    left:7vw;
+}
+.logo img{
+    height: 6vw;
+    width: 6vw;
+}
+.sidebar{
+    height: 100vh;
+    position: absolute;
+    width: 4vw;
+    background-color: rgb(75, 75, 75);
+    font-size: 0.5rem;
+}
+.heading2{
+  /*    font-family: 'Dongle', sans-serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7rem;
+    margin-left: 4vw;
+}
+.heading3{
+    /*    font-family: 'Dongle', sans-serif;*/
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.7rem;
+      margin-left: 4vw;
+  }
+#h1{
+    display: flex;
+    cursor: pointer;
+}
+/*.pointer{
+    height: 3.2vw;
+    width: 3.2vw;
+    position: absolute;
+    left: 0vw;
+    top: 24vh;
+    background-color:rgba(0, 0,0,0.3);
+    border-radius: 30px;
+}
+.h1d{
+    background-color:rgba(0, 0,0,0.3);
+}*/
+#h1 img{
+    margin-top: 6px;
+}
+#h2 img{
+    margin-top: 7px;
+}
+#h3 img{
+    margin-top: 7px;
+}
+#h4 img{
+    margin-top: 7px;
+}
+#h1:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#h1 img:hover{
+     height: 3vw;
+     width: 3vw;
+}
+#h2{
+    display: flex;
+}
+#h2:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#h2 img:hover{
+     height: 3vw;
+     width: 3vw;
+}
+#h3{
+    display: flex;
+}
+#h3:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#h3 img:hover{
+     height: 3vw;
+     width: 3vw;
+}
+#h4{
+    display: flex;
+}
+#h4:hover{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#h4 img:hover{
+     height: 3vw;
+     width: 3vw;
+}
+.musicbar{
+    height: 12vh;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    background-color: rgba(0, 0,0,0.9);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+#buttonfb{
+    position: absolute;
+    top: 14vh;
+    left: 3vw;
+    cursor: pointer;
+}
+#buttonfb img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+nav ul{
+    margin-top: 20vh;
+    margin-left: 5px;
+ }
+ nav ul li{
+    padding-top: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+}
+nav ul li img{
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.ilogo{
+    padding-top: 8vh;
+    cursor: pointer;
+}
+.in img{
+    padding-top: 10px;
+    height: 3vw;
+    width: 3vw;
+}
+.in img:hover{
+    height: 3.5vw;
+    width: 3.5vw;
+}
+.ig img{
+    padding-top: 10px;
+    height: 3vw;
+    width: 3vw;
+}
+.ig img:hover{
+    height: 3.5vw;
+    width: 3.5vw;
+}
+
+.newclasslist{
+    background-image: url('pause.png');
+    background-size: cover;
+    height: 4vw;
+    width: 4vw;
+    position: absolute;
+    left: 48;
+    bottom: 1vh;
+}
+body{
+    overflow: hidden;
+}
+/*.micons{
+   
+}*/
+.ilogo{
+    margin-left: 6px;
+}
+.micons{
+    display: flex;
+    cursor: pointer;
+    height: 4vh;
+    width: 20vh;
+    justify-content: space-around;
+}
+
+.mastplay {
+    background-image: url('newforward2.png');
+    background-size: cover;
+    width: 3vw;
+    height: 3vw;
+}
+
+.nex img{
+    width: 3vw;
+    height: 3vw;
+}
+.prev img{
+    width: 3vw;
+    height: 3vw;
+}
+
+#musicseekbar{
+    width: 70vw; 
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.info{
+    position: absolute;
+    bottom:0vh;
+    left: 3.5vw;
+    font-size: .6rem;
+    display: flex;
+}
+.name{
+    margin-top: 30px;
+}
+.cove{
+    opacity: 0;
+}
+.cove img{
+    height: 11vh;
+    width: 5vw;
+}
+.volume{
+    position: absolute;
+    bottom:2vh;
+    right: 5vw;
+}
+.volume img{
+    height: 3vw;
+    width: 3vw;
+}
+.main{
+    position: absolute;
+    top:10vh;
+    left: 10vw;
+    background-color: rgba(0, 0,0,0.5);
+    height: 78vh;
+    width: 86vw;
+}
+
+.heading{
+    margin-top: 2vh;
+    text-align: center;
+    color: white;
+}
+.container1{
+    margin-left: 2vw;
+    display: flex;
+    height:30vh;
+    width: 80vw;
+    justify-content: space-around;
+}
+.song{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+.song:hover{
+    height: 26vh;
+    width:16vw;
+}
+.cpic11{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('1.jpg');
+    background-size: cover;
+}
+.sname11{
+    font-size: 0.6rem;
+}
+/*.song12{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic12{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('2.jpg');
+    background-size: cover;
+}
+.sname12{
+    font-size: 0.6rem;
+}
+/*.song13{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic13{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('3.jpg');
+    background-size: cover;
+}
+.sname13{
+    font-size: 0.6rem;
+}
+/*.song14{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic14{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('4.jpg');
+    background-size: cover;
+}
+.sname14{
+    font-size: 0.6rem;
+}
+/*.song15{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic15{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('5.jpg');
+    background-size: cover;
+}
+.sname15{
+    font-size: 0.6rem;
+}
+
+
+.container2{
+    margin-left:2vw;
+    display: flex;
+    height:30vh;
+    width: 80vw;
+   
+    justify-content: space-around;
+}
+/*.song21{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic21{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('s1.jpg');
+    background-size: cover;
+}
+.sname21{
+    font-size: 0.6rem;
+}
+/*.song22{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic22{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('s2.jpg');
+    background-size: cover;
+}
+.sname22{
+    font-size: 0.6rem;
+}
+/*.song23{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic23{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('s3.jpg');
+    background-size: cover;
+}
+.sname23{
+    font-size: 0.6rem;
+}
+/*.song24{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic24{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('s4.jpg');
+    background-size: cover;
+}
+.sname24{
+    font-size: 0.6rem;
+}
+/*.song25{
+    height: 24vh;
+    width:14vw;
+    margin-top: 3vh;
+    //background-color: yellowgreen;
+}*/
+.cpic25{
+    height: 20vh;
+    width: 14vw;
+    background-color: black;
+    background-image: url('s5.jpg');
+    background-size: cover;
+}
+.sname25{
+    font-size: 0.6rem;
+}
+#nextpage{
+    background-image: url('next.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    right: 6.5vw;
+    top: 34vh;
+}
+#prevpage{
+    background-image: url('previous.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    left: 10.5vw;
+    top: 34vh;
+}
+
+#nextpagec{
+    background-image: url('next.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    right: 6.5vw;
+    top: 68vh;
+}
+#prevpagec{
+    background-image: url('previous.png');
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    left: 10.5vw;
+    top: 68vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+      width: 0vh;
+    }
+  }
